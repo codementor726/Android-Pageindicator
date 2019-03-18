@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2016 Markus Ressel
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/settings">
+
+        <com.rarepebble.colorpicker.ColorPreference
+            android:defaultValue="@color/default_value_activeIndicatorFillColor"
+            android:key="@string/key_activeIndicatorFillColor"
+            android:title="@string/title_activeIndicatorFillColor"/>
+
+        <com.rarepebble.colorpicker.ColorPreference
+            android:defaultValue="@color/default_value_activeIndicatorStrokeColor"
+            android:key="@string/key_activeIndicatorStrokeColor"
+            android:title="@string/title_activeIndicatorStrokeColor"/>
+
+        <EditTextPreference
+            android:defaultValue="7"
+            android:dialogTitle="@string/title_activeIndicatorFillSize"
+            android:inputType="number"
+            android:key="@string/key_activeIndicatorFillSize"
+            android:title="@string/title_activeIndicatorFillSize"/>
+
+        <EditTextPreference
+            android:defaultValue="0"
+            android:dialogTitle="@string/title_activeIndicatorStrokeWidth"
+            android:inputType="number"
+            android:key="@string/key_activeIndicatorStrokeWidth"
+            android:title="@string/title_activeIndicatorStrokeWidth"/>
+
+        <com.rarepebble.colorpicker.ColorPreference
+            android:defaultValue="@color/default_value_inactiveIndicatorFillColor"
+            android:key="@string/key_inactiveIndicatorFillColor"
+            android:title="@string/title_inactiveIndicatorFillColor"/>
+
+        <com.rarepebble.colorpicker.ColorPreference
+            android:defaultValue="@color/default_value_inactiveIndicatorStrokeColor"
+            android:key="@string/key_inactiveIndicatorStrokeColor"
+            android:title="@string/title_inactiveIndicatorStrokeColor"/>
+
+        <EditTextPreference
+            android:defaultValue="5"
+            android:dialogTitle="@string/title_inactiveIndicatorFillSize"
+            android:inputType="number"
+            android:key="@string/key_inactiveIndicatorFillSize"
+            android:title="@string/title_inactiveIndicatorFillSize"/>
+
+        <EditTextPreference
+            android:defaultValue="0"
+            android:dialogTitle="@string/title_inactiveIndicatorStrokeWidth"
+            android:inputType="number"
+            android:key="@string/key_inactiveIndicatorStrokeWidth"
+            android:title="@string/title_inactiveIndicatorStrokeWidth"/>
+
+        <EditTextPreference
+            android:defaultValue="5"
+            android:dialogTitle="@string/title_indicatorGap"
+            android:inputType="number"
+            android:key="@string/key_indicatorGap"
+            android:title="@string/title_indicatorGap"/>
+
+        <EditTextPreference
+            android:defaultValue="@integer/default_value_initialPageIndex"
+            android:dialogTitle="@string/title_initialPageIndex"
+            android:inputType="number"
+            android:key="@string/key_initialPageIndex"
+            android:title="@string/title_initialPageIndex"/>
+
+        <EditTextPreference
+            android:defaultValue="@integer/default_value_pageCount"
+            android:dialogTitle="@string/title_pageCount"
+            android:inputType="number"
+            android:key="@string/key_pageCount"
+            android:title="@string/title_pageCount"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
